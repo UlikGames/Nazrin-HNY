@@ -1,0 +1,486 @@
+* {
+box-sizing: border-box;
+}
+
+body{
+  background-color: #e2cdf4;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.note{
+  margin-top: -50px;
+  text-align: center;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+h1{
+  font-size:100px;
+  color: #eaac11;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  width: 1000px;
+}
+p{
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.credits {
+  position: fixed;
+    bottom: 10px;
+    right: 45%;
+    max-width: 250px;
+    z-index: 10;
+    text-align: right;
+}
+.credits1 {
+  position: fixed;
+    bottom: 10px;
+    right: 10px;
+    max-width: 250px;
+    z-index: 10;
+    text-align: right;
+}
+
+.name{
+  color: #795548;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.happyHolidays:after {
+  content: '';
+  background-image: url(https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2014/02/snow.png);
+  -webkit-animation: 5s animateIn ease, animate 83s ease 0s infinite;
+  animation: 5s animateIn ease, animate 83s ease 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+  background-repeat: repeat;
+  background-size: 43%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  opacity: 0.75;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  z-index: 2;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tree {
+  position: relative;
+  margin-left: -900px;
+  margin-top: -355px;
+  margin-bottom: -15px;
+   z-index: -2;
+}
+.snowman{
+  z-index: -2;
+  width: 30%;
+/*   position: relative; */
+  position: absolute; 
+ margin-top: -170px;
+  margin-left: 500px;
+}
+.ground {
+  width: 160%;
+  height: 280px;
+  background: #e5e5e5;
+  margin-top: 300px;
+  border-radius: 100% 100%;
+}
+
+.animate__animated.animate__backInUp {
+  --animate-duration: 3s;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media {
+  img {
+    width: auto;
+  }
+}
+
+.twinklier:before {
+position: absolute;
+content: '';
+left: -130px;
+top: 30px;
+width: 80px;
+height: 3px;
+background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+z-index: 4;
+-webkit-animation-name: twinklier_before_effect;
+-webkit-animation-duration: 5s;
+-webkit-animation-delay: 2s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+}
+
+.twinklier:after {
+ position: absolute;
+ content: '';
+ left: -100px;
+ top: -10px;
+ width: 3px;
+ height: 80px;
+ background-image: -webkit-radial-gradient(#fff 0%, transparent 85%);
+ z-index: 4;
+-webkit-animation-name: twinklier_after_effect;
+-webkit-animation-duration: 5s;
+-webkit-animation-delay: 2s;
+-webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: infinite;
+  }
+
+@-webkit-keyframes twinklier_before_effect {
+0% {
+ left: 80px;
+ top: 75px;
+ opacity: 0;}
+
+15% {
+left: 80px;
+top: 75px;
+opacity: 1;}
+
+30% {
+left: 80px;
+top: 75px;
+opacity: 0;}
+
+35% {
+left: 455px;
+top: 43px;
+opacity: 0;}
+
+50% {
+left: 455px;
+top: 43px;
+opacity: 1;}
+
+65% {
+left: 455px;
+ top: 43px;
+opacity: 0;}
+
+70% {
+left: -100px;
+top: 29px;
+opacity: 0;}
+                                                  85% {
+left: -100px;
+top: 29px;
+opacity: 1;}
+                                                 100% {
+left: -100px;
+top: 29px;
+opacity: 0;}
+                                                    }
+
+@-webkit-keyframes twinklier_after_effect {
+0% {
+left: 110px;
+top: 35px;
+opacity: 0;}
+
+ 15% {
+ left: 110px;
+ top: 35px;
+ opacity: 1;}
+
+30% {
+left: 110px;
+top: 35px;
+opacity: 0;}
+
+35% {
+left: 495px;
+top: 8px;
+opacity: 0;}
+
+50% {
+left: 495px;
+top: 8px;
+opacity: 1;}
+
+65% {
+left: 495px;
+top: 8px;
+ opacity: 0;}
+
+70% {
+left: -65px;
+top: -10px;
+opacity: 0;}
+
+85% {
+left: -65px;
+top: -10px;
+opacity: 1;}
+
+100% {
+left: -65px;
+top: -10px;
+opacity: 0;}
+}
+
+
+@-webkit-keyframes animateIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 0.25;
+}
+ }
+
+@keyframes animateIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 0.25;
+}
+}
+ @-webkit-keyframes animate {
+from {
+ background-position: 0 0px;
+}
+to {
+background-position: 0px 5500px;
+}
+}
+@keyframes animate {
+from {
+ background-position: 0 0px;
+ }
+to {
+background-position: 0px 5500px;
+ }
+}
+                                               /*Responsive*/
+                                                                       /* @media (min-width: 0) and (max-width: 375px) {
+                                                                        .happyHolidays {
+                                                                        width:375px
+                                                                      }
+                                                                      .happyHolidays h1{
+                                                                      font-size: 90px;
+                                                                      display: inline-block;
+                                                                      text-align: center;
+                                                                      margin-top: 70px;
+                                                                      margin-left: 25px;
+                                                                    }
+                                                                    .happyHolidays h2{
+                                                                    font-size: 90px;
+                                                                    display: inline-block;
+                                                                    text-align: center;
+                                                                    margin-top: 135px;
+                                                                    margin-left: -250px;
+                                                                  }
+                                                                  .happyHolidays p{
+                                                                  font-size: 14px;
+                                                                  display: inline-block;
+                                                                  text-align: center;
+                                                                }
+                                                                .ground{
+                                                                width: 200px;
+                                                                margin-left: -90px;
+                                                              }
+                                                             
+                                                                                                   .tree{
+                                                          margin-left: -150px;
+                                                          margin-top: 190px;
+                                                          width: 30%;
+                                                        }
+                                                        .snowman{
+                                                        margin-left: -520px;
+                                                        width: 25%;
+                                                      }
+                                                      .tree{
+                                                      margin-left: 120px;
+                                                      width: 25%;
+                                                    }
+                                                    }*/
+
+/* @media (min-width: 650px) and (max-width: 656px) {
+.happyHolidays h1{
+ font-size: 90px;
+ display: inline-block;
+ text-align: center;
+ margin-top: 70px;
+ margin-left: 25px;
+ }
+.happyHolidays h2{
+ font-size: 90px;
+ display: inline-block;
+ text-align: center;
+                                                        margin-top: 135px;
+                                                        margin-left: -250px;
+                                                      }
+                                                      .happyHolidays p{
+                                                        font-size: 14px;
+                                                        display: inline-block;
+                                                        text-align: center;
+                                                      }
+                                                  
+                                                      .ground{
+                                                        width: 120%;
+                                                        margin-left: -90px;
+                                                      }
+                                                   
+.tree{
+margin-left: -150px;
+margin-top: 190px;
+width: 30%;
+}
+
+.snowman{
+margin-left: -520px;
+width: 25%;
+}
+ }
+
+ @media (min-width: 657px) and (max-width: 977px) {
+ .happyHolidays {
+width:640px
+}
+.happyHolidays h1{
+ font-size: 20px;
+ display: inline-block;
+ text-align: center;
+ margin-top: 70px;
+  margin-left: 25px;
+ }
+
+.happyHolidays h2{
+font-size: 20px;
+display: inline-block;
+ text-align: center;
+ margin-top: 135px;
+  margin-left: -250px;
+}
+                                                     .happyHolidays p{
+ font-size: 14px;
+ display: inline-block;
+  text-align: center;
+ }
+
+.ground{
+width: 120%;
+margin-left: 500px;
+ }
+                                                
+.tree{
+margin-left: -150px;
+margin-top: 190px;
+ width: 30%;
+ }
+.snowman{
+margin-left: -720px;
+width: 25%;
+                                                   }
+ }
+
+@media (min-width: 977px) and (max-width: 1080px) {
+.happyHolidays {
+ width:960px
+ }
+.happyHolidays h1{
+font-size: 40px;
+display: inline-block;
+text-align: center;
+margin-top: 70px;
+margin-left: 25px;
+ }
+                                                    .happyHolidays h2{
+font-size: 40px;
+display: inline-block;
+text-align: center;
+margin-top: 135px;
+ margin-left: -250px;
+ }
+.happyHolidays p{
+font-size: 14px;
+display: inline-block;
+text-align: center;
+ }
+ .ground {
+width: 120%;
+margin-left: 0px;
+ }
+                                               
+.tree{
+width: 30%;
+ }
+.snowman{
+margin-left: -720px;
+width: 25%;
+ }
+}
+
+/* @media screen and (max-width: 1080px) {
+  .happyHolidays h1{
+    font-size: 100px;
+    display: inline-block;
+    text-align: center;
+     margin-left: -100px;                         }
+                                                      .happyHolidays h2{
+font-size: 100px;
+display: inline-block;
+text-align: center;
+ }
+                                                      .happyHolidays p{
+ font-size: 20px;
+display: inline-block;
+text-align: center;
+ margin-left: 100px;
+ }
+                                                   
+ .snowman{
+ margin-left: -250;
+  }
+ }
+                                                    
